@@ -7,6 +7,6 @@ export class Debtor {
   bankName: string;
   createAt: string;
   state:string;
-  personalData:PersonalData;
+
 
 }

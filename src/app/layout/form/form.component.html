@@ -1,0 +1,71 @@
+<div class="card border-primary">
+  <div class="card-header">
+    Grupo Por Critero
+  </div>
+  <div class="card-body">
+    <form (ngSubmit) = "create()">
+      <div class="container">
+          <div class="form-group">
+            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Grupo 1" required>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Operación</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+               <option selected>Seleccione una operación</option>
+               <option value="1"><=</option>
+               <option value="2">>=</option>
+               <option value="3">=</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input [(ngModel)]="debtor.name" type="text" class="form-control is-valid" id="validationServer01" placeholder="Parametro 1" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Parametro 2" required>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Institución</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+               <option selected>Seleccione una institución</option>
+               <option value="1">BBVA-Bancomer</option>
+               <option value="2">Afirme</option>
+               <option value="3">Banamex</option>
+               <option value="4">All</option>
+            </select>
+          </div>
+          <div class="form-group text-right">
+              <a href="#"><i class="material-icons">check_circle</i></a>
+              <a href="#">  <i class="material-icons">cancel</i></a>
+                <button type="button" role="button">Add Client</button>
+          </div>
+      </div>
+    </form>
+    <div class="container">
+      <table class="table table-striped table-light">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Banco</th>
+            <th scope="col">Operación</th>
+            <th scope="col">Gestionar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grupo 1</td>
+            <td>04-07-2018</td>
+            <td>BBVA-Bancomer</td>
+            <td> SELECT * FROM Bancomer</td>
+            <td> <a href="#"><i class="material-icons">remove_red_eye</i></a>
+                 <a href="#"><i class="material-icons">check_circle</i></a>
+                 <a href="#">  <i class="material-icons">cancel</i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
